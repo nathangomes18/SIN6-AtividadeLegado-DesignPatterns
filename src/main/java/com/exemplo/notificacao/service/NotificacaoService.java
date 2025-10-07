@@ -17,8 +17,8 @@ public class NotificacaoService {
     }
 
     public void enviarNotificacoes(Pedido pedido) {
-        emailService.enviar(pedido);
-        smsService.enviar(pedido);
-        pushService.enviar(pedido);
+        emailService.PedidoCriado(pedido);
+        smsService.PedidoCriado(pedido);
+        pushService.PedidoCriado(pedido);
     }
 }
